@@ -130,7 +130,7 @@ body {
 }
 .Temperature-container {
   background-color: #323544;
-  width: 33%;
+  width: 100%;
   color: #bfc1c8;
 }
 #Box2 {
@@ -377,7 +377,11 @@ ol.breadcrumb a {
   color: white;
 }
 /* <!----------------------End Main Content---------------------> */
-
+@media (min-width: 992px) {
+  .Temperature-container {
+    width: 33%;
+  }
+}
 @media (max-width: 992px) {
   .nav-item .nav-link.active,
   .nav-item .nav-link {
@@ -399,5 +403,12 @@ ol.breadcrumb a {
   }
   .navbar-toggler-icon {
     width: 1rem;
+  }
+  .sup-temp {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Temperature-container {
+    width: 60%;
   }
 }
